@@ -32,6 +32,35 @@
       -->
     </div>
   </section>
+  
+<section id="contact" class="hero">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <!--
+      <p>Helping businesses grow through insight, clarity, and execution.</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+      -->
+    </div>
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" novalidate>
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="a5061e8c-6248-4deb-9d91-253498f8943d">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" style="display:none;">
+
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+  
 <!--
   <section id="services" class="section">
     <div class="container">

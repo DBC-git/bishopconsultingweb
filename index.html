@@ -1,96 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bishop Consulting</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
     <div class="container">
-      <h1 class="logo">Bishop Consulting</h1>
+      <h1>Bishop Consulting</h1>
       <nav>
-        <ul>
-        <!--
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        -->
-        </ul>
+        <a href="#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Coming soon</h2>
-      <!--
-      <p>Helping businesses grow through insight, clarity, and execution.</p>
-      <a href="#contact" class="btn-primary">Get in Touch</a>
-      -->
-    </div>
-  </section>
-  
-<section id="contact" class="hero">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <!--
-      <p>Helping businesses grow through insight, clarity, and execution.</p>
-      <a href="#contact" class="btn-primary">Get in Touch</a>
-      -->
-    </div>
-  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" novalidate>
-    <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="a5061e8c-6248-4deb-9d91-253498f8943d">
-
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-    <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" style="display:none;">
-
-    <button type="submit" class="btn-primary">Send Message</button>
-  </form>
-</section>
-  
-<!--
-  <section id="services" class="section">
-    <div class="container">
-      <h3>Our Services</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Business Strategy</h4>
-          <p>Custom strategies tailored to your business goals and market challenges.</p>
-        </div>
-        <div class="card">
-          <h4>Operations Optimization</h4>
-          <p>Streamline processes and improve efficiency through expert systems design.</p>
-        </div>
-        <div class="card">
-          <h4>Technology Consulting</h4>
-          <p>Leverage modern tools and frameworks to enable growth and scalability.</p>
-        </div>
+  <main>
+    <section id="about" class="about-section">
+      <div class="text">
+        <h2>About</h2>
+        <p>W Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu porta nisi, ut ultricies neque. Vivamus eget vulputate arcu, sit amet facilisis nunc. Curabitur bibendum erat at lectus imperdiet fringilla. Etiam nec ante dui. Etiam posuere feugiat velit, nec pretium lorem. Donec mattis massa non pellentesque auctor. Proin nibh odio, mattis nec metus pulvinar, vestibulum facilisis lacus. Vivamus faucibus nulla ac ligula mattis, in gravida felis iaculis. Aenean eget libero feugiat, semper urna ac, fermentum ipsum. Quisque eu maximus purus, sed lobortis dolor. Aenean non nisl neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus viverra scelerisque justo. Nulla tempor elit vitae sem suscipit, vitae faucibus dolor pellentesque. Etiam sit amet magna consectetur, sodales elit eu, varius nisi. Aenean cursus dictum quam nec venenatis.</p>
       </div>
-    </div>
-  </section>
+      <div class="image">
+        <img src="assets/profile.jpg" alt="Consultant profile photo" />
+      </div>
+    
+    </section>
 
-  <section id="about" class="section light">
-    <div class="container">
-      <h3>About Bishop Consulting</h3>
-      <p>
-        Founded by Daniel Bishop, Bishop Consulting provides bespoke solutions for organizations navigating complex decisions. With a focus on clarity, ethics, and high-impact delivery, we partner with clients across industries.
-      </p>
-    </div>
-  </section>
+    <section class="projects-gallery">
+      <h2>Projects</h2>
+      <div class="scroll-container">
+        <a class="project-tile" href="#">
+          <img src="assets/project1.png" alt="Project 1 icon" />
+          <h3>Demand flexibility</h3>
+          <p>...</p>
+        </a>
+        <a class="project-tile" href="#">
+          <img src="assets/project2.png" alt="Project 2 icon" />
+          <h3>Urban Energy Modeling</h3>
+          <p>...</p>
+        </a>
+        <a class="project-tile" href="#">
+          <img src="assets/project2.png" alt="Project 2 icon" />
+          <h3>National Energy Systems Modeling</h3>
+          <p>...</p>
+        </a>
+        <a class="project-tile" href="#">
+          <img src="assets/project3.png" alt="Project 3 icon" />
+          <h3>Lighting Design</h3>
+          <p>...</p>
+        </a>
+        
+        <a class="project-tile" href="#">
+          <img src="assets/project3.png" alt="Project 3 icon" />
+          <h3>Heating and Hot Water Systems</h3>
+          <p>...</p>
+        </a>
+        
+        <a class="project-tile" href="#">
+          <img src="assets/project3.png" alt="Project 3 icon" />
+          <h3>Lighting Design</h3>
+          <p>...</p>
+        </a>
+        
+        <a class="project-tile" href="#">
+          <img src="assets/project3.png" alt="Project 3 icon" />
+          <h3>Transportation Demand Assessment</h3>
+          <p>...</p>
+        </a>
+        
+      </div>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="containe
--->
+    <section id="contact class="contact-section">
+      <h2>Contact</h2>
+      <p>If you're ready to take your business or project to the next level, let's talk. Fill out the form below to get in touch.</p>
+      <div class="form-wrapper">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" novalidate>
+          <input type="hidden" name="access_key" value="a5061e8c-6248-4deb-9d91-253498f8943d">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bishop Consulting</p>
+  </footer>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 /* Fonts and base */
 body {
   margin: 0;
@@ -52,13 +53,72 @@ header .container {
   align-items: center;
 }
 
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.about-section .text,
+.about-section .image {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.about-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Projects Section */
+.projects-gallery {
+  padding: 2rem 0;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.project-tile {
+  flex: 0 0 auto;
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-tile img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.project-tile:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Contact Section */
+.contact-section {
+  background: #e9f1fb;
+}
+
 .contact-form {
   display: flex;
-  flex-direction: column;  /* stack vertically */
-  width: 100%;             /* full width */
-  max-width: 600px;        /* optional max width */
-  margin: 0 auto;          /* center horizontally */
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   gap: 1.2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .contact-form label {
@@ -68,7 +128,7 @@ header .container {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;             /* full width inputs */
+  width: 100%;
   padding: 0.8rem 1rem;
   border: 1.5px solid #ccc;
   border-radius: 6px;
@@ -78,7 +138,7 @@ header .container {
 }
 
 .btn-primary {
-  align-self: center;      /* center button */
+  align-self: center;
   background-color: #bfa14a;
   color: #1a1a1a;
   padding: 0.9rem 1.5rem;
@@ -95,8 +155,6 @@ header .container {
   background-color: #9e8b32;
 }
 
-
-
 /* Footer */
 footer {
   background: #323512;
@@ -105,3 +163,26 @@ footer {
   padding: 2em 0;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+main > section {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1200px) {
+  main > section {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

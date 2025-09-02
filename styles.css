@@ -162,6 +162,8 @@ header .container {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
   padding: 0.8rem 0.5rem;
   border: 1.5px solid #ccc;
   border-radius: 6px;

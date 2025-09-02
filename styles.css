@@ -30,8 +30,8 @@ header {
 
 header h1 {
   font-family: 'DM Serif Display', serif;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0.5rem;
 }
 
 .logo {
@@ -57,6 +57,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0rem;
 }
 
 /* About Section */
@@ -255,7 +256,7 @@ main > section {
   }
   nav {
     width: 100%;             /* Optional: nav takes full width */
-    justify-content: flex-start; /* Optional: nav links align left */
+    justify-content: flex-end; /* Optional: nav links align left */
   }
 }
 /* Stack as column on small screens */

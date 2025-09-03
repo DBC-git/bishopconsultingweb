@@ -22,31 +22,189 @@
 
   <main>
     <section class="projects-page">
-      <h2>Project Page</h2>
-      <p></p>
 
-      <div class="project-card">
+      <div class="project-card" id="project_one">
+
         <div class="project-text">
-          <h2>Project One</h2>
-          <p>This is a short description of project one. It does cool things and solves interesting problems.</p>
+          <h2> Urban Energy Modelling </h2>
+          <p> The ‘Pathways to net-zero' project was a multi-year (2022-2025) research project co-funded by MBIE, BRANZ,
+            and the BIP, where I was the lead researcher. The project explored pathways to energy and emissions
+            reductions for neighborhoods in different climates in New Zealand.
+            To accurately assess the impact of technologies, a detailed minute resolution physics-based model was
+            developed, representing a world-first in Urban Energy Modelling. The Urban Energy Model included bespoke
+            developed models for:
+          <ul>
+            <li>Space heating and cooling (Building Energy Models)</li>
+            <li>Hot water heating</li>
+            <li>Household plug loads (incl. cooking loads)</li>
+            <li>Electric vehicle charging</li>
+            <li>Rooftop solar PV</li>
+            <li>Domestic batteries</li>
+          </ul>
+
+          To comprehensively assess a range of technological interventions (e.g. heat pumps for domestic hot water)
+          the cumulative energy demand, cumulative carbon emissions, and neighborhood peak loads were assessed.
+          The report is available here [AWAITING RELEASE] and the key figure demonstrating the effectiveness of
+          different strategies may be viewed <a href="assets/Main_figure.svg" target="_blank"> here</a> </p>
         </div>
-        <img src="https://via.placeholder.com/300" alt="Project One Screenshot">
+
+        <a href="assets/Main_figure.svg" target="_blank">
+          <img src="assets/Main_figure.svg" alt="Project Main Figure">
+        </a>
       </div>
 
-      <div class="project">
+      <div class="project-card" id="project_two">
         <div class="project-text">
-          <h2>Project Two</h2>
-          <p>This is a short description of project two. It's designed with performance and usability in mind.</p>
+          <h2> Space and Hot Water Heating – thermal modeling </h2>
+          <p> EECA commissioned a lifecycle analysis of space and water heating technologies, which I completed in
+            collaboration with the Electrical Power Engineering Centre (EPEC) consulting arm of the University of
+            Canterbury (2024-2025).
+            <br><br>
+            My role included calculating the operating performance of a range of space and hot water heating
+            technologies, using a combination of bespoke developed physics-based models and standard-based empirical
+            models. For a comprehensive assessment, the models included a fine minute time resolution to enable the
+            simulation of various control strategies and to evaluate any lost serviceability (aka cold showers).
+            Altogether, over 5000 scenarios required simulation, requiring parallel processing.
+            <br><br>
+            Overall, the work provides detailed guidance for policy makers and individuals on the selection of space and
+            hot water heating technologies. Read the full report here [AWAITING RELEASE].
+          </p>
         </div>
-        <img src="https://via.placeholder.com/300" alt="Project Two Screenshot">
+        <a href="assets/AHP.png" target="_blank">
+          <img src="assets/AHP.png " alt="Project One Screenshot">
+        </a>
       </div>
 
-      <div class="project">
+      <div class="project-card" id="project_three">
         <div class="project-text">
-          <h2>Project Three</h2>
-          <p>This is a short description of project three. It focuses on clean design and accessibility.</p>
+          <h2> National Demand Flexibility Assessment </h2>
+          <p> To address the important question of ‘how much demand flexibility is present in New Zealand?’ and ‘what
+            loads should be targeted?’. A student and I developed a framework to characterize loads based on their
+            source of demand flexibility. We then applied this framework on New Zealand, using the EECA developed Energy
+            End-use Database (EEUD), to develop New Zealand specific figures and recommendations.
+            <br><br>
+            The analysis finds that up to 69% of New Zealand electricity demand is susceptible to demand flexibility.
+            The paper was published in the world-class Energy Policy journal and is available to read <a
+              href=" https://www.sciencedirect.com/science/article/pii/S0301421524004075" target="_blank">here</a>.
+          </p>
         </div>
-        <img src="https://via.placeholder.com/300" alt="Project Three Screenshot">
+        <a href="assets/Demandflexibility-Sector.jpg " target="_blank">
+          <img src="assets/Demandflexibility-Sector.jpg " alt="Project One Screenshot">
+        </a>
+      </div>
+
+      <div class="project-card" id="project_four">
+        <div class="project-text">
+          <h2> National Energy System Modelling </h2>
+          <p> What does a transition to electric vehicles mean for the national grid? Oversimplified analyses present a
+            transition to electric vehicles as independent from changes to the national grid, assuming a constant
+            emissions factor, despite a transition to electric vehicles requiring significant additional electricity
+            demand and electricity supply build out. To assess the impact of a transition to electric vehicles
+            wholistically we assessed a transition to electric vehicles under several different grid and charging
+            scenarios, assessing the cumulative emissions and build out costs to facilitate the EV uptake, all compared
+            to a Business as usual (BAU) scenario to assess the cost of inaction.
+            <br><br>
+            To complete the analysis the New Zealand grid was modelled using the LEAP energy modelling package. Overall,
+            the work is one of the most detailed of its kind. The work was published in the highly reputable journal
+            Energy Reports and is available <a
+              href=" https://www.sciencedirect.com/science/article/pii/S2352484723002251" target="_blank">here</a>.
+          </p>
+        </div>
+        <a href="assets/PowerSystem-cost.jpg " target="_blank">
+          <img src="assets/PowerSystem-cost.jpg " alt="Project One Screenshot">
+        </a>
+      </div>
+
+      <div class="project-card" id="project_five">
+        <div class="project-text">
+          <h2> Hot Water Heating Demand Flexibility </h2>
+          <p>
+            Electric hot water heating presents an existing and underutilized method for demand response in New Zealand.
+            Hence, better use of this resource is one of the most promising and lowest cost means to improve the
+            performance of the New Zealand power system, decreasing peak loads and increasing the uptake of low-cost
+            intermittent renewable eneid="first-project"rgies.
+            <br><br>
+            I conducted a series of studies into this important topic:
+            The true energy storage availability for hot water cylinders was evaluated by considering stochastic usage
+            profiles and predictive control
+            <br><br>
+            Results indicated the average storage available for demand side management from the use of this smart
+            controller is predicted to be between 3.63 and 7.20 kWh per household. Read the full paper <a
+              href=" https://www.tandfonline.com/doi/full/10.1080/03036758.2023.2197241" target="_blank">here</a>.
+            <br><br>
+            A range of existing and emerging controller types were investigated for their impact on peak demand and
+            serviceability.
+            <br><br>
+            Smart-thermostat controller demonstrated the greatest efficacy of all the controllers assessed with
+            significant reductions in peak demand without substantial losses in service. Additionally, smart-thermostat
+            controllers demonstrate demand deferral and valley filling, shifting peak loads to times of lowest demand
+            and smoothing load distribution. Read the full paper <a href=" https://www.tandfonline.com/doi/full/10.1080/03036758.2023.2286988 
+" target="_blank">here</a>.
+
+          </p>
+        </div>
+
+        <a href="assets/hwc-collective.jpg " target="_blank">
+
+          <img src="assets/hwc-collective.jpg " alt="Project One Screenshot">
+        </a>
+      </div>
+
+      <div class="project-card" id="project_six">
+        <div class="project-text">
+          <h2> Lighting Design & Measurement </h2>
+          <p>
+            Lighting is a big driver of energy usage but also highly influential for the aesthetics and functionality of
+            indoor environments. Despite this, lighting design has not kept up with the evolving usage of indoor
+            environments (significant usage of back-lit screens) or lighting measurement technology (low-cost imaging
+            sensors). The result is that despite years of research and development, lighting design still follows
+            inaccurate illuminance targets.
+            <br><br>
+            This thesis argues for a movement away from illuminance design standards and towards luminance distributions
+            targets, that include the important feature of visual contrast and its location in the field of view. To
+            support this a practical new lighting methodology is developed from robust visual research and low-cost
+            luminance imaging devices were developed to support the method.
+            <br><br>
+            For more details the full thesis can be found <a href=" https://ir.canterbury.ac.nz/server/api/core/bitstreams/065788c1-34da-4d03-b6f4-d1336e31a518/content 
+
+" target="_blank">here</a>, and journal publications detailing the new design method <a href=" https://www.mdpi.com/2071-1050/15/5/4369 
+
+" target="_blank">here</a>, and development of a low-cost luminance imaging device <a href=" https://www.mdpi.com/2075-5309/13/5/1266 
+
+" target="_blank">here</a>,.
+          </p>
+        </div>
+        <a href="assets/luminacecamera-vignette.png " target="_blank">
+          <img src="assets/luminacecamera-vignette.png " alt="Project One Screenshot">
+        </a>
+
+      </div>
+
+      <div class="project-card" id="project_seven">
+        <div class="project-text">
+          <h2> Energy Education </h2><a class="project-tile" href="#">
+          <img src="
+          <p>
+            In 2021-2022 I developed and lectured a final year Energy Systems Engineering course (ENME405-605) to cover
+            for a departing staff member. The challenging course comprehensively covered energy from resources,
+            conversion technology, through to demands (buildings, transportation, and industry). The course has been
+            retained and is still being taught.
+            <br><br>
+            The new course achieved very high student evaluations 4.7 & 4.8 (/5). A couple student comments are captured
+            below:
+            <br><br>
+            “Awesome class!! Thoroughly enjoyed it, thanks so much for all the effort put in, it was a stimulating and
+            engaging course and I'm super glad I took it. Cheers!!”
+
+            br><br>
+
+            “great teacher and stimulated my interest massively”
+
+          </p>
+        </div>
+        <a href="assets/Global-Primary-Energy.png " target="_blank">
+          <img src="assets/Global-Primary-Energy.png " alt="Project One Screenshot">
+        </a>
       </div>
 
     </section>

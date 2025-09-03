@@ -134,7 +134,7 @@ header .container {
 
 .project-tile {
   flex: 0 0 auto;
-  width: 250px;
+  /* width: 250px; */
   background: white;
   border-radius: 10px;
   padding: 1rem;
@@ -145,11 +145,42 @@ header .container {
 }
 
 .project-tile img {
-  width: 60px;
+  height: 200px;
   margin-bottom: 1rem;
 }
 
 
+/* Project page */
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* space between text and image */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-card .project-text {
+  flex: 1;
+  text-align: justify;
+}
+
+.project-card img {
+  width: 400px;
+  max-width: 40vw;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.projects-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
 /* Contact Section */
 .contact-section {
   /* background: #e9f1fb; */
@@ -157,7 +188,7 @@ header .container {
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0rem 1rem;
   box-sizing: border-box;
 }
@@ -266,5 +297,17 @@ main > section {
     flex-direction: column;
     align-items: flex-start; /* optional: align left when stacked */
     gap: 0rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .project-card img {
+    max-width: 100%;
+    margin: 1rem 0 0 0;
   }
 }

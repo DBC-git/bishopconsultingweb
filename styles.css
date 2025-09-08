@@ -97,7 +97,7 @@ header .container {
   flex: 1;
   min-width: 300px;
   padding: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-section .image {
@@ -165,7 +165,7 @@ header .container {
 
 .project-card .project-text {
   flex: 1;
-  text-align: justify;
+  text-align: left;
 }
 
 .project-card img {
@@ -259,6 +259,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .about-section {
+    <section id="about" class="ab
     flex-direction: column;
   }
 
